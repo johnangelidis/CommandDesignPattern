@@ -1,6 +1,6 @@
 public class Robot {
     public Robot(String name){
-        System.out.println("Welcome, my name is " + ", I'm a friendly robot.");
+        System.out.println("Welcome, my name is " + name + ", I'm a friendly robot.");
     }
 
     public void pickup(){
