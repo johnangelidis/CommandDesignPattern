@@ -14,10 +14,9 @@ public class HealCommand implements Command{
     /**
      * Method that execuetes a jump command.
      */
-    @author
+    
     public void execute() {
-        // TODO Auto-generated method stub
-            robot.heal();
+        robot.heal();
     }
     
 }
