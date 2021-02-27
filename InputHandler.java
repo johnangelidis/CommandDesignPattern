@@ -1,5 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
+
+import javax.lang.model.util.ElementScanner14;
 /**
  * Contains a hashmap for commands and a means to call them
  * @author Coby Arambula
@@ -21,20 +23,27 @@ public class InputHandler {
         commands.put("pickup", pC);
         commands.put("jump", jC);
         commands.put("fire", fC);
-        commands.put("jump", hC);
+        commands.put("heal", hC);
     }
 
     /**
-     * 
-     * @param data
+     * Calls the appropriate command whose key matches the
+     * data parameter
+     * @param data string representation of hashmap key
      */
     public void inputEntered(String data) {
+        Robot robot = new Robot("robot");
         if (data.equalsIgnoreCase("pickup"))
-        {
-
+            robot.pickup();
+        else if (data.equalsIgnoreCase("jump"))
+            robot.jump();
+        else if (data.equalsIgnoreCase("fire"))
+            robot.fire();
+        else if (data.equalsIgnoreCase("jump"))
+            robot.heal();
+        else {
+            System.out.println("An invalid command was entered");
         }
-
-
     }
 
 }
