@@ -11,7 +11,7 @@ public class FireCommand implements Command {
      * @param robot of type Robot
      */
     public FireCommand(Robot robot){
-      this.robot = robot
+      this.robot = robot;
     }
 
     /*
@@ -19,7 +19,6 @@ public class FireCommand implements Command {
     */
     @Override
     public void execute() {
-        // TODO Auto-generated method stub
         robot.fire();
     }
 
