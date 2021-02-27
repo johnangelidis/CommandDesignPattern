@@ -1,3 +1,7 @@
+/*
+*The class the robot will reference in order to fire at enemies
+* @author challison404
+*/
 public class FireCommand implements Command {
 
     @Override
