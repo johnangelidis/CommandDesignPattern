@@ -15,7 +15,7 @@ public class Robot {
      * Method that represents the robot picking up an item
      */
     public void pickup(){
-        System.out.println("Oh treasure, picking it up!")
+        System.out.println("Oh treasure, picking it up!");
     }
     /**
      * Method that represents the robot jumping
