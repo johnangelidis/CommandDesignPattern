@@ -12,7 +12,7 @@ public class HealCommand implements Command{
         this.robot = robot;
     }
     /**
-     * Method that execuetes a jump command.
+     * Method that execuetes a heal command.
      */
     
     public void execute() {
