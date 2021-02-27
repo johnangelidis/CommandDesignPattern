@@ -14,16 +14,16 @@ public class InputHandler {
      * @param robot instance of the Robot class
      */
     public InputHandler(Robot robot) {
-        HashMap<String, Command> commands;
+        HashMap<String, Command> command = new HashMap<String, Command>();
         var pC = new PickupCommand(robot);
         var jC = new JumpCommand(robot);
         var fC = new FireCommand(robot);
         var hC = new HealCommand(robot);
 
-        commands.put("pickup", pC);
-        commands.put("jump", jC);
-        commands.put("fire", fC);
-        commands.put("heal", hC);
+        command.put("pickup", pC);
+        command.put("jump", jC);
+        command.put("fire", fC);
+        command.put("heal", hC);
     }
 
     /**
